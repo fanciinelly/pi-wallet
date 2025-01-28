@@ -49,8 +49,7 @@ body {
     font-size: 20px;
     cursor: pointer;
   }
-  
-  
+
   /* Logo Section */
   .logo-section {
     margin: 10px 0;
@@ -97,25 +96,6 @@ body {
     margin-top: 10px;
     font-size: 14px;
   }
-  
-  /* Footer */
-  /* .footer {
-    margin-top: 20px;
-  }
-  
-  .explore-btn {
-    background-color: #713d92;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .explore-btn:hover {
-    background-color: #713d92;
-  } */
 
   /* Footer */
 .footer {
@@ -149,6 +129,73 @@ body {
     background-color: #5c3073; /* Darker hover color */
   }
   
+
+  /* Responsive Styles */
+
+/* Tablet Layout (screens >= 768px) */
+@media (min-width: 768px) {
+  .grid {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+      gap: 30px;
+      margin: 60px 20px;
+  }
+
+  .logo-circle {
+      width: 100px;
+      height: 100px;
+  }
+
+  .logo-section h2 {
+      font-size: 22px;
+  }
+
+  .explore-btn {
+      width: 70%;
+      font-size: 18px;
+  }
+}
+
+/* Desktop Layout (screens >= 1024px) */
+@media (min-width: 1024px) {
+  .header {
+      padding: 15px 40px;
+  }
+
+  .header h1 {
+      font-size: 22px;
+  }
+
+  .grid {
+      grid-template-columns: repeat(5, 1fr); /* 5 columns for wide screens */
+      gap: 40px;
+      margin: 80px 60px;
+  }
+
+  .grid-item img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .grid-item p {
+      font-size: 16px;
+  }
+
+  .logo-circle {
+      width: 120px;
+      height: 120px;
+  }
+
+  .logo-section h2 {
+      font-size: 24px;
+  }
+
+  .explore-btn {
+      width: 50%;
+      font-size: 20px;
+      padding: 15px 30px;
+  }
+}
+
   /* about */
   /* Unlock Section */
 .unlock-section {
