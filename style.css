@@ -142,6 +142,7 @@ body {
   
   .explore-btn i {
     font-size: 18px; /* Icon size */
+    margin-right: 8px;
   }
   
   .explore-btn:hover {
