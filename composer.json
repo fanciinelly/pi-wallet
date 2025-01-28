@@ -1,0 +1,16 @@
+{
+    "name": "hp/pi",
+    "description": "wallet",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Pi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Princewill Nwafor",
+            "email": "nwaforprincewill21@gmail.com"
+        }
+    ],
+    "require": {}
+}

