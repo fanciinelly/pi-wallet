@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: pi-wallet
+    env: php
+    region: oregon
+    buildCommand: "composer install"
+    startCommand: "php -S 0.0.0.0:8000 -t public/"

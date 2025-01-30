@@ -3,7 +3,7 @@
         'name' => 'hp/pi',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '5a10119deacbba6fe6fb72adb51d1809fdcb0c5c',
+        'reference' => 'deb5d84cc909510ac500e4ab546e1a6f2a7b7335',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'hp/pi' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '5a10119deacbba6fe6fb72adb51d1809fdcb0c5c',
+            'reference' => 'deb5d84cc909510ac500e4ab546e1a6f2a7b7335',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
