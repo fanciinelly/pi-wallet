@@ -6,6 +6,9 @@
             "Hp\\Pi\\": "src/"
         }
     },
+    "scripts": {
+        "start": "php -S 0.0.0.0:8000 -t public/"
+    },
     "authors": [
         {
             "name": "Princewill Nwafor",
